@@ -377,3 +377,54 @@ header {
 .block-intro h2 {
   padding-bottom: 30px;
 }
+
+.hero {
+  background: #f8f6f2;
+}
+
+header {
+  background: #f8f6f2;
+}
+
+.about-intro h2 {
+  padding-bottom: 30px;
+}
+
+.about-intro {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.about-block {
+  padding: 60px 0;
+}
+
+.about-intro p:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.about-snap,
+.about-think {
+  background: #f8f6f2;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.about-snap img,
+.about-think img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.about-experience {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about-experience * {
+  color: var(--navy-blue);
+}
