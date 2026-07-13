@@ -315,7 +315,7 @@ header {
 
 .skills-block {
   background: var(--navy-blue);
-  padding: 60px 0px;
+  padding: 120px 0px;
 }
 
 .skills-block * {
@@ -329,11 +329,6 @@ header {
 
 .skills-block .container > div {
   width: 50%;
-}
-
-.single-skill {
-  padding: 30px 0;
-  border-bottom: 2px solid #fff;
 }
 
 .single-skill:first-child {
@@ -399,7 +394,7 @@ header {
 }
 
 .about-block {
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 .about-intro p:not(:last-child) {
@@ -428,3 +423,35 @@ header {
 .about-experience * {
   color: var(--navy-blue);
 }
+
+.block-content {
+  height: 500px; /* Whatever shows roughly 2 cards */
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-lock-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ======== */
+
+.skills-block {
+  overflow: hidden;
+}
+
+.block-content {
+  overflow: hidden;
+}
+
+.scroll-lock-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* .single-skill {
+  padding: 30px 0;
+} */
