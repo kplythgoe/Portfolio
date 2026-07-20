@@ -248,6 +248,98 @@
         </div>
       </div>
     </div>
+    <div class="projects-block" id="projects">
+      <div class="container">
+        <div class="projects-wrapper">
+          <div class="block-intro">
+            <div class="hero-decoration"></div>
+            <h2>Projects</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="projects-scroll">
+            <a href="" class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </a>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+            <div class="single-project">
+              <img src="assets/images/projects/tdas-logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-block">
+      <div class="container">
+        <div class="about-block-wrapper">
+          <div class="about-intro">
+            <h2>About me</h2>
+            <div class="hero-decoration"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="about-experience">
+            <div class="about-snap">
+              <img src="assets/images/snap-logo-2.svg" />
+              <div class="hero-decoration"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="about-think">
+              <img src="assets/images/think-logo.svg" />
+              <div class="hero-decoration"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="about-block">
       <div class="container">
         <div class="about-block-wrapper">
@@ -358,6 +450,26 @@
       end: () => `+=${scrollDistance}`,
       scrub: true,
       pin: true,
+      invalidateOnRefresh: true,
+    },
+  });
+
+  const wrapper = document.querySelector(".projects-wrapper");
+  const scroll = document.querySelector(".projects-scroll");
+
+  const getScrollAmount = () => {
+    return scroll.scrollWidth - wrapper.offsetWidth;
+  };
+
+  gsap.to(scroll, {
+    x: () => -getScrollAmount(),
+    ease: "none",
+    scrollTrigger: {
+      trigger: wrapper,
+      start: "center center",
+      end: () => "+=" + getScrollAmount(),
+      pin: true,
+      scrub: 1,
       invalidateOnRefresh: true,
     },
   });
