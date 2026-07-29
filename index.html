@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
   </head>
-  <body>
+  <body id="header">
     <header>
       <div class="container">
         <div class="nav-wrapper">
@@ -25,6 +25,19 @@
           <div class="contact-button">
             <a href="#contact">Contact</a>
           </div>
+          <div class="burger-menu">
+            <img
+              src="assets/images/burger-menu-right.svg"
+              alt="burger menu icon"
+            />
+          </div>
+          <div class="mobile-menu">
+            <a href="#header">Header</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#professional-projects">Professional projects</a>
+            <a href="#personal-projects">Personal Projects</a>
+          </div>
         </div>
       </div>
     </header>
@@ -38,7 +51,11 @@
           </div>
           <div class="hero-content">
             <p>
-              I'm a front-end developer with over 3 years of professional experience, building responsive and engaging websites with HTML, CSS and JavaScript. Alongside my commercial experience, I enjoy developing personal projects with React and exploring modern front-end technologies
+              I'm a front-end developer with over 3 years of professional
+              experience, building responsive and engaging websites with HTML,
+              CSS and JavaScript. Alongside my commercial experience, I enjoy
+              developing personal projects with React and exploring modern
+              front-end technologies
             </p>
           </div>
           <div class="social-links">
@@ -73,20 +90,29 @@
         </div>
       </div>
     </div>
-    <div class="about-block" id="about">
+    <div class="about-block section" id="about">
       <div class="container">
         <div class="about-block-wrapper">
           <div class="about-intro">
             <h2>About me</h2>
             <div class="hero-decoration"></div>
             <p>
-              I'm a front-end developer with over 3 years of professional experience, with a focus on building responsive websites and creating interfaces that are both functional and enjoyable to use.
+              I'm a front-end developer with over 3 years of professional
+              experience, with a focus on building responsive websites and
+              creating interfaces that are both functional and enjoyable to use.
             </p>
             <p>
-              I enjoy solving problems and finding ways to make websites work better, whether that's improving an existing site or building something from the ground up. My professional experience has given me the opportunity to work across a range of projects and technologies, while my personal projects allow me to explore new tools and continue developing my skills.
+              I enjoy solving problems and finding ways to make websites work
+              better, whether that's improving an existing site or building
+              something from the ground up. My professional experience has given
+              me the opportunity to work across a range of projects and
+              technologies, while my personal projects allow me to explore new
+              tools and continue developing my skills.
             </p>
             <p>
-              I'm always looking to become a stronger all-round front-end developer, expanding my knowledge and taking on new challenges that push me to improve.
+              I'm always looking to become a stronger all-round front-end
+              developer, expanding my knowledge and taking on new challenges
+              that push me to improve.
             </p>
           </div>
           <div class="about-experience">
@@ -116,8 +142,21 @@
               </svg>
               <div class="experience-content">
                 <div class="title-decoration"></div>
-                <p>The Snap Agency was my first taste of professional working experience as a developer. The Snap agency was a design agency which covered several sectors such as SEO, marketing, design and of course, development. Most of the work I produced was built via page builders such as Salient and Divi with the odd JavaScript solution.</p>
-<p>I was at The Snap Agency for approximately 1.5 years before moving on. I went in with fundamental knowledge of the 3 pillars of web development (HTML, CSS and JS) and I left with having a working knowledge of how development works in the real world. </p>
+                <p>
+                  The Snap Agency was my first taste of professional working
+                  experience as a developer. The Snap agency was a design agency
+                  which covered several sectors such as SEO, marketing, design
+                  and of course, development. Most of the work I produced was
+                  built via page builders such as Salient and Divi with the odd
+                  JavaScript solution.
+                </p>
+                <p>
+                  I was at The Snap Agency for approximately 1.5 years before
+                  moving on. I went in with fundamental knowledge of the 3
+                  pillars of web development (HTML, CSS and JS) and I left with
+                  having a working knowledge of how development works in the
+                  real world.
+                </p>
               </div>
             </div>
             <div class="about-think single-about">
@@ -181,39 +220,67 @@
               <div class="experience-content">
                 <div class="title-decoration"></div>
                 <p>
-                After around six months, Think hired a developer with over 15 years of experience who I had the opportunity to work alongside and learn from. They didn't just teach me how to solve individual problems; they taught me how to think as a developer. I learned to look beyond simply making something work and instead consider how it could be made more efficient, intuitive and enjoyable for the end user.
-              </p>
-              <p>
-                The majority of the websites I have built at Think Design Agency have been developed using WordPress and Advanced Custom Fields (ACF). Using ACF, we create flexible, block-based page structures that allow clients to manage and update their content without having to worry about the underlying code or design. I work on the development of these bespoke themes using HTML, PHP, JavaScript and CSS/SCSS, creating components tailored to each client's requirements.
-              </p>
-              <p>
-                The projects I have worked on have ranged from simple brochure websites to more complex builds featuring filterable case studies and blog posts, multilingual content and e-commerce functionality using WooCommerce.
-              </p>
-              <p>
-                My time at Think Design Agency has also given me the opportunity to become much more involved in the wider development lifecycle and communicate directly with clients. As I have become more confident and knowledgeable, I have increasingly been able to answer technical questions independently and contribute to discussions about the technologies and approaches best suited to each project.
-              </p>
+                  After around six months, Think hired a developer with over 15
+                  years of experience who I had the opportunity to work
+                  alongside and learn from. They didn't just teach me how to
+                  solve individual problems; they taught me how to think as a
+                  developer. I learned to look beyond simply making something
+                  work and instead consider how it could be made more efficient,
+                  intuitive and enjoyable for the end user.
+                </p>
+                <p>
+                  The majority of the websites I have built at Think Design
+                  Agency have been developed using WordPress and Advanced Custom
+                  Fields (ACF). Using ACF, we create flexible, block-based page
+                  structures that allow clients to manage and update their
+                  content without having to worry about the underlying code or
+                  design. I work on the development of these bespoke themes
+                  using HTML, PHP, JavaScript and CSS/SCSS, creating components
+                  tailored to each client's requirements.
+                </p>
+                <p>
+                  The projects I have worked on have ranged from simple brochure
+                  websites to more complex builds featuring filterable case
+                  studies and blog posts, multilingual content and e-commerce
+                  functionality using WooCommerce.
+                </p>
+                <p>
+                  My time at Think Design Agency has also given me the
+                  opportunity to become much more involved in the wider
+                  development lifecycle and communicate directly with clients.
+                  As I have become more confident and knowledgeable, I have
+                  increasingly been able to answer technical questions
+                  independently and contribute to discussions about the
+                  technologies and approaches best suited to each project.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="skills-block" id="skills">
+    <div class="skills-block section" id="skills">
       <div class="container">
         <div class="block-intro">
           <div class="title-decoration"></div>
           <h2>Skills</h2>
           <p>
-            Thoughout my career so far, I have developed a number of skills that are important in the world of development. From technical skills to personal skills, there's a lot I have learned during my time as a developer. Take a look!
+            Thoughout my career so far, I have developed a number of skills that
+            are important in the world of development. From technical skills to
+            personal skills, there's a lot I have learned during my time as a
+            developer. Take a look!
           </p>
         </div>
         <div class="block-content">
           <div class="scroll-lock-wrapper">
             <div class="single-skill">
               <div class="single-skill-wrapper">
-                <p class="skill-title"><span>01</span> HTML & Semantic Markup</p>
+                <p class="skill-title">
+                  <span>01</span> HTML & Semantic Markup
+                </p>
                 <p>
-                  Building well-structured, semantic HTML that provides a solid foundation for accessible and maintainable websites.
+                  Building well-structured, semantic HTML that provides a solid
+                  foundation for accessible and maintainable websites.
                 </p>
               </div>
             </div>
@@ -221,7 +288,9 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>02</span> CSS & SCSS</p>
                 <p>
-                  Creating responsive layouts and interfaces that work across different screen sizes, using modern CSS techniques and SCSS to keep styles organised and maintainable.
+                  Creating responsive layouts and interfaces that work across
+                  different screen sizes, using modern CSS techniques and SCSS
+                  to keep styles organised and maintainable.
                 </p>
               </div>
             </div>
@@ -229,7 +298,9 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>03</span> JavaScript</p>
                 <p>
-                  Using JavaScript to create interactive functionality, manipulate the DOM, work with APIs and solve problems that go beyond what HTML and CSS can provide.
+                  Using JavaScript to create interactive functionality,
+                  manipulate the DOM, work with APIs and solve problems that go
+                  beyond what HTML and CSS can provide.
                 </p>
               </div>
             </div>
@@ -237,7 +308,9 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>04</span> Responsive Web Design</p>
                 <p>
-                  Building websites that adapt effectively to different screen sizes and devices, with a focus on usability and consistent experiences across desktop, tablet and mobile.
+                  Building websites that adapt effectively to different screen
+                  sizes and devices, with a focus on usability and consistent
+                  experiences across desktop, tablet and mobile.
                 </p>
               </div>
             </div>
@@ -245,15 +318,21 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>05</span> WordPress Development</p>
                 <p>
-                  Building and maintaining bespoke WordPress websites, working with custom themes and integrating functionality to meet individual client requirements.
+                  Building and maintaining bespoke WordPress websites, working
+                  with custom themes and integrating functionality to meet
+                  individual client requirements.
                 </p>
               </div>
             </div>
             <div class="single-skill">
               <div class="single-skill-wrapper">
-                <p class="skill-title"><span>06</span> Advanced Custom Fields (ACF)</p>
+                <p class="skill-title">
+                  <span>06</span> Advanced Custom Fields (ACF)
+                </p>
                 <p>
-                  Creating flexible, block-based content systems that allow clients to manage their websites while maintaining control over the design and structure.
+                  Creating flexible, block-based content systems that allow
+                  clients to manage their websites while maintaining control
+                  over the design and structure.
                 </p>
               </div>
             </div>
@@ -261,7 +340,9 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>07</span> WooCommerce</p>
                 <p>
-                  Developing and maintaining e-commerce websites, including customising WooCommerce functionality and improving the shopping experience.
+                  Developing and maintaining e-commerce websites, including
+                  customising WooCommerce functionality and improving the
+                  shopping experience.
                 </p>
               </div>
             </div>
@@ -269,7 +350,9 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>08</span> React</p>
                 <p>
-                  Building personal projects with React to develop my understanding of component-based architecture, state management, API integration and modern JavaScript development.
+                  Building personal projects with React to develop my
+                  understanding of component-based architecture, state
+                  management, API integration and modern JavaScript development.
                 </p>
               </div>
             </div>
@@ -277,7 +360,8 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>09</span> Git & GitHub</p>
                 <p>
-                  Using version control to manage projects, track changes and collaborate on development work.
+                  Using version control to manage projects, track changes and
+                  collaborate on development work.
                 </p>
               </div>
             </div>
@@ -285,7 +369,11 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>10</span> Problem Solving</p>
                 <p>
-                  I enjoy getting to the bottom of technical problems and finding solutions that make websites work better. My experience working with legacy code has taught me to understand existing systems before making changes and to consider the impact those changes may have elsewhere.
+                  I enjoy getting to the bottom of technical problems and
+                  finding solutions that make websites work better. My
+                  experience working with legacy code has taught me to
+                  understand existing systems before making changes and to
+                  consider the impact those changes may have elsewhere.
                 </p>
               </div>
             </div>
@@ -293,7 +381,9 @@
               <div class="single-skill-wrapper">
                 <p class="skill-title"><span>11</span> Client Communication</p>
                 <p>
-                  Working directly with clients to understand requirements, discuss technical considerations and help determine appropriate solutions.
+                  Working directly with clients to understand requirements,
+                  discuss technical considerations and help determine
+                  appropriate solutions.
                 </p>
               </div>
             </div>
@@ -301,14 +391,17 @@
         </div>
       </div>
     </div>
-    <div class="projects-block" id="professional-projects">
+    <div class="projects-block section" id="professional-projects">
       <div class="container">
         <div class="projects-wrapper">
           <div class="block-intro">
             <div class="hero-decoration"></div>
             <h2>Projects</h2>
             <p>
-              Here is a showcase of some of the websites I have built throughout my career so far. I have either built from scratch or had heavy involvement of all of the projects shown here. I would love to talk about and answer any questions regarding the projects.
+              Here is a showcase of some of the websites I have built throughout
+              my career so far. I have either built from scratch or had heavy
+              involvement of all of the projects shown here. I would love to
+              talk about and answer any questions regarding the projects.
             </p>
           </div>
           <div class="projects-scroll">
@@ -365,14 +458,20 @@
         </div>
       </div>
     </div>
-    <div class="projects-block personal-projects-block" id="personal-projects">
+    <div
+      class="projects-block section personal-projects-block"
+      id="personal-projects"
+    >
       <div class="container">
         <div class="personal-projects-wrapper">
           <div class="block-intro">
             <div class="hero-decoration"></div>
             <h2>Personal Projects</h2>
             <p>
-              Below is a collection of personal projects which focus on practicing new skills. If a project is marked with 'version 1', it means I plan on replicating the project ina more concise and efficient manner after gaining further knowledge.
+              Below is a collection of personal projects which focus on
+              practicing new skills. If a project is marked with 'version 1', it
+              means I plan on replicating the project ina more concise and
+              efficient manner after gaining further knowledge.
             </p>
           </div>
           <div class="personal-projects">
@@ -462,3 +561,5 @@
     },
   });
 </script>
+
+<script src="script.js"></script>
