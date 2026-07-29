@@ -385,20 +385,79 @@ header {
   padding-bottom: 30px;
 }
 
-.about-intro {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 40px;
-}
-
 .about-block {
   padding: 120px 0;
 }
 
+.about-block-wrapper {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.about-intro,
+.about-experience {
+  width: 50%;
+}
+
+.about-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.single-about p {
+  color: #fff;
+}
+
+.about-experience svg {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition:
+    left 0.3s ease-in,
+    transform 0.5s ease-in;
+}
+
+.experience-content {
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in;
+}
+
+.single-about:hover .experience-content {
+  max-height: 2000px;
+  opacity: 1;
+}
+
+.about-experience svg {
+  pointer-events: none;
+}
+
+.single-about:hover svg {
+  left: 0;
+  transform: translateX(0%);
+}
+
 .about-intro p:not(:last-child) {
   padding-bottom: 20px;
+}
+
+.single-about {
+  transform: background 0.3s ease-in-out;
+}
+
+.single-about:hover {
+  background: var(--navy-blue);
+}
+
+.single-about svg path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.single-about:hover svg path {
+  fill: #fff;
 }
 
 .about-snap,
@@ -406,18 +465,13 @@ header {
   background: #f8f6f2;
   padding: 30px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-.about-snap img,
-.about-think img {
+.about-snap svg,
+.about-think svg {
   width: 100px;
-  margin-bottom: 30px;
-}
-
-.about-experience {
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
+  padding: 30px 0px;
 }
 
 .about-experience * {
@@ -433,7 +487,7 @@ header {
 .scroll-lock-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 
 /* ======== */
@@ -461,12 +515,81 @@ header {
 }
 
 .single-project img {
-  height: 150px;
+  height: 120px !important;
 }
 
 .single-project {
-  padding: 80px 100px;
-  background: green;
+  padding: 40px 50px;
+}
+
+.ouas {
+  background: rgba(55, 161, 117, 0.2);
+  position: relative;
+}
+
+.ouas::before {
+  content: "Drum Award Winner";
+  color: #fff;
+  background: #37a175;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+  font-weight: 600;
+}
+
+.slattery {
+  background: #f0efef;
+}
+
+.chancery {
+  background: #f58232;
+}
+
+.sb-labs {
+  background: #f3f5f6;
+}
+
+.fareshare {
+  background: rgba(227, 243, 205, 0.5);
+}
+
+.tdas {
+  background: rgba(238, 223, 202, 0.4);
+}
+
+.ssuk {
+  background: rgba(151, 165, 178, 0.3);
+}
+
+.fpl {
+  background: rgb(55, 0, 60, 0.2);
+  position: relative;
+}
+
+.fpl::before {
+  content: "Version 1";
+  color: #fff;
+  background: rgb(55, 0, 60);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+  font-weight: 600;
+}
+
+.personal-projects {
+  margin-top: 4rem;
+}
+
+.fpl img {
+  height: 75px !important;
 }
 
 .projects-block {
@@ -494,4 +617,41 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+}
+
+.personal-projects-block {
+  background: #f8f6f2;
+}
+
+footer {
+  background: var(--navy-blue);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  align-items: center;
+}
+
+footer .email-link img {
+  width: 30px;
+}
+
+footer .email-link {
+  display: flex;
+  gap: 15px;
+}
+
+footer .email-link span {
+  display: flex;
+  align-items: center;
+}
+
+footer * {
+  color: #fff;
+}
+
+.experience-content p {
+    padding-bottom: 20px;
 }
