@@ -18,4 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     header.classList.toggle("scrolled", window.scrollY > 0);
   });
+
+  const exp = document.querySelectorAll(".single-about");
+
+  exp.forEach((job) => {
+    job.addEventListener("click", () => {
+      job.classList.toggle("active");
+
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 700);
+    });
+  });
 });
