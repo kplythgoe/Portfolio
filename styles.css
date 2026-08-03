@@ -318,7 +318,7 @@ header.scrolled {
 
 .hero {
   padding: 60px 0px;
-  margin-top: 93px;
+  margin-top: 92px;
 }
 
 .hero .container {
@@ -470,7 +470,7 @@ header {
   transition: max-height 0.5s ease-in;
 }
 
-.single-about:hover .experience-content {
+.single-about.active .experience-content {
   max-height: 2000px;
   opacity: 1;
 }
@@ -479,7 +479,7 @@ header {
   pointer-events: none;
 }
 
-.single-about:hover svg {
+.single-about.active svg {
   left: 0;
   transform: translateX(0%);
 }
@@ -490,9 +490,10 @@ header {
 
 .single-about {
   transform: background 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.single-about:hover {
+.single-about.active {
   background: var(--navy-blue);
 }
 
@@ -500,7 +501,7 @@ header {
   transition: fill 0.3s ease-in-out;
 }
 
-.single-about:hover svg path {
+.single-about.active svg path {
   fill: #fff;
 }
 
@@ -593,6 +594,20 @@ header {
   background: #f3f5f6;
 }
 
+.lagans {
+  background: rgba(216, 216, 216, 0.65);
+}
+
+.single-project.lagans img {
+  height: 90px !important;
+}
+
+@media (max-width: 650px) {
+  .single-project.lagans img {
+    height: 60px !important;
+  }
+}
+
 .fareshare {
   background: rgba(227, 243, 205, 0.5);
 }
@@ -602,7 +617,7 @@ header {
 }
 
 .ssuk {
-  background: rgba(151, 165, 178, 0.3);
+  background: #adadad;
 }
 
 .fpl {
@@ -748,9 +763,13 @@ footer * {
   .hero-left {
     width: 100% !important;
   }
+
+  .personal-projects .fpl img {
+    height: 55px !important;
+  }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .single-project {
     height: 75px;
     width: 150px;
@@ -762,5 +781,72 @@ footer * {
   .ouas::before {
     padding: 1px 0;
     font-size: 12px;
+  }
+} */
+
+@media (max-width: 450px) {
+  .single-project {
+    height: 120px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  footer .container {
+    padding: 20px 30px;
+  }
+
+  footer .container {
+    padding: 10px 30px;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .scroll-lock-wrapper {
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: scroll;
+  }
+
+  .single-skill {
+    width: 400px;
+    flex-shrink: 0;
+  }
+
+  .single-skill-wrapper {
+    height: 100%;
+  }
+
+  .single-skill-wrapper {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .block-content {
+    height: auto;
+  }
+
+  .single-skill .skill-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .single-skill {
+    width: 300px;
   }
 }
