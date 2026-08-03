@@ -434,6 +434,13 @@
               <img src="assets/images/projects/sblabs-normal-logo.svg" />
             </a>
             <a
+              href="https://www.laganshealthcare.co.uk/"
+              target="_blank"
+              class="single-project lagans"
+            >
+              <img src="assets/images/projects/lagans.svg" />
+            </a>
+            <a
               href="https://faresharegm.org.uk/"
               target="_blank"
               class="single-project fareshare"
@@ -521,24 +528,28 @@
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  const skillsWrapper = document.querySelector(".scroll-lock-wrapper");
-  const skillsBlock = document.querySelector(".skills-block");
+  const mm = gsap.matchMedia();
 
-  const scrollDistance =
-    skillsWrapper.scrollHeight - skillsWrapper.parentElement.offsetHeight;
+  mm.add("(min-width: 981px)", () => {
+    const skillsWrapper = document.querySelector(".scroll-lock-wrapper");
+    const skillsBlock = document.querySelector(".skills-block");
 
-  gsap.to(skillsWrapper, {
-    y: -scrollDistance,
-    ease: "none",
+    const scrollDistance =
+      skillsWrapper.scrollHeight - skillsWrapper.parentElement.offsetHeight;
 
-    scrollTrigger: {
-      trigger: skillsBlock,
-      start: "center center",
-      end: () => `+=${scrollDistance}`,
-      scrub: true,
-      pin: true,
-      invalidateOnRefresh: true,
-    },
+    gsap.to(skillsWrapper, {
+      y: -scrollDistance,
+      ease: "none",
+
+      scrollTrigger: {
+        trigger: skillsBlock,
+        start: "center center",
+        end: () => `+=${scrollDistance}`,
+        scrub: true,
+        pin: true,
+        invalidateOnRefresh: true,
+      },
+    });
   });
 
   const wrapper = document.querySelector(".projects-wrapper");
