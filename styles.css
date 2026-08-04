@@ -524,7 +524,7 @@ header {
 }
 
 .block-content {
-  height: 500px; /* Whatever shows roughly 2 cards */
+  height: clamp(500px, 60vh, 650px); /* Whatever shows roughly 2 cards */
   overflow: hidden;
   position: relative;
 }
