@@ -535,17 +535,20 @@
     const skillsWrapper = document.querySelector(".scroll-lock-wrapper");
     const skillsBlock = document.querySelector(".skills-block");
 
-    const scrollDistance =
-      skillsWrapper.scrollHeight - skillsWrapper.parentElement.offsetHeight;
+    const getScrollDistance = () => {
+      return (
+        skillsWrapper.scrollHeight - skillsWrapper.parentElement.offsetHeight
+      );
+    };
 
     gsap.to(skillsWrapper, {
-      y: -scrollDistance,
+      y: () => -getScrollDistance(),
       ease: "none",
 
       scrollTrigger: {
         trigger: skillsBlock,
         start: "center center",
-        end: () => `+=${scrollDistance}`,
+        end: () => `+=${getScrollDistance()}`,
         scrub: true,
         pin: true,
         invalidateOnRefresh: true,
